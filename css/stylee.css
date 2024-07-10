@@ -139,7 +139,7 @@ nav {
 }
 
 .section-top {
-    padding: 90px;
+    padding: 80px ;
 }
 
 .cards {
@@ -168,6 +168,7 @@ nav {
 .card:hover {
     background: #ff8a1d;
     transition: .3s all;
+
 }
 
 .cardimg {
@@ -618,7 +619,11 @@ footer {
         font: 16px 'Lato', sans-serif;
         padding: 10px 25px;
     }
-
+#menu li  a:hover{
+    color: #0355cc;
+    transition: .3s all;
+    
+}
     #active {
         color: #0355cc !important;
     }
@@ -695,14 +700,24 @@ footer {
     .hero p {
         width: 700px;
     }
+.section-top{
+    padding: 80px 0;
+}
 
     .cards {
+        margin: auto;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
+        max-width: 960px;
     }
-
+    .card:hover {
+        background: #ff8a1d;
+        transition: .3s all;
+        scale: 1.05;
+    }
     .cards .card {
         max-width: 100%;
         width: 340px;
@@ -749,7 +764,10 @@ footer {
     .blucard h2 {
         max-width: 500px;
     }
-
+.cardservc:hover{
+    scale: 1.1;
+    transition: .5s all;
+}
     #profsimg {
         display: inline-block;
         width: 100%;
