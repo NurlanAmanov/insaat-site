@@ -394,7 +394,7 @@ button:hover {
 
 .contacts{
     width: 100%;
-  padding: 125px;
+  padding: 90px;
 }
 .contacts h2{
     font: 32px 'Merriweather Sans', sans-serif;
@@ -527,6 +527,7 @@ form button{
 }
 
 .socilaivons {
+ 
     margin: 20px;
     display: flex;
     align-items: center;
@@ -535,18 +536,31 @@ form button{
 }
 
 .socilaivons a {
-    font-size: 25px;
+   text-align: center;
+    font-size: 30px;
     color: #fff;
     margin: 0 15px;
 
 }
 
-.socilaivons a:hover {
-
-    background: #ff8a1d;
-    transition: .3s all;
-    scale: 1.5;
-}
+.socilaivons a:hover:nth-child(1) {
+    margin: 0;
+    border-radius: 20%;
+background:#e1306c;
+transition: .3s all; 
+scale: 1.5;}
+.socilaivons a:hover:nth-child(2) {
+    margin: 0;
+    border-radius: 10%;
+background: #ff8a1d;
+transition: .3s all; 
+scale: 1.5;}
+.socilaivons a:hover:nth-child(3) {
+    margin: 0;
+    border-radius: 50%;
+background: #1d21ff;
+transition: .3s all; 
+scale: 1.5;}
 
 footer {
     display: flex;
@@ -578,9 +592,10 @@ footer {
         padding: 0 0;
 
     }
-    .silderss{
-        
-        padding: 0 0 0 0;
+    .silderss {
+        padding-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .headtop {
         padding: 15px 0;
@@ -601,7 +616,7 @@ footer {
     }
  
 .rght img{
-    height: 100%;
+    height: 50%;
     object-fit: cover;
     
 }
@@ -632,7 +647,7 @@ footer {
 
     .left {
         text-align: left;
-        width: 100%;
+        width: 50%;
     
     }
     
@@ -640,15 +655,13 @@ footer {
         color: #0355cc;
         font: 40px 'Merriweather Sans', sans-serif;
         font-weight: bold;
-    
         max-width: 50%;
     }
     
     .left p {
-        margin-top: 26px;
+       
         color: #444;
         font: 15px 'Lato';
-
         max-width: 100%;
     }
     
@@ -677,14 +690,15 @@ footer {
     }
     
     .rght {
-        width: 100%;
+        width: 50%;
         object-fit: cover;
        
     }
     
-    
+  
     .silderss .hero {
-        margin: auto;
+        width: 100%;
+        margin: 20px 0;
         display: flex;
         align-items: center;
         justify-content: center;
