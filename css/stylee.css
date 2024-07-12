@@ -449,17 +449,16 @@ button:hover {
 iframe {
     margin: 25px;
 }
-
-form input {
-    width: 100%;
-    border: none;
-    height: 50px;
-    margin-bottom: 25px;
-    padding-left: 25px;
-    background-color: #fdf7f7f1;
-    outline: none;
-    color: #000;
-    
+form input{
+width: 100%;
+border: none;
+height: 50px;
+margin-bottom: 25px;
+padding-left: 25px;
+background-color: #ffffff;
+outline: none;
+color: #ffffff;
+box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
 }
 
 #text {
@@ -916,47 +915,40 @@ footer {
         display: flex;
         flex-direction: column;
 
-    }
-
-    .contblcok {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        width: 100%;
-
-    }
-
-    .cardcont {
-        max-width: 960px;
-    }
-
-    iframe {
-        margin: 0 20px;
-    }
-
-    form input {
-        width: 100%;
-        border: none;
-        height: 50px;
-        margin-bottom: 25px;
-        padding-left: 25px;
-        background: rgb(245, 245, 245);
-        outline: stroke;
-        color: #000;
-
-    }
-
-    form button {
-        margin:  5px 0;
-        width: 30%;
-        height: 50px;
-        background: #0355cc;
-        color: #fff;
-        font: 16px 'Merriweather Sans', sans-serif;
-        text-transform: uppercase;
-    }
-
+        }
+        .contblcok{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
+           
+        }
+        .cardcont{
+            max-width: 960px;
+        }
+        iframe{
+            margin: 25px;
+        }
+    form input{
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    background-color: #ffffff;
+    outline: none;
+    color: #ffffff;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+}
+form button{
+    width: 30%;
+    height: 50px;
+    background: #0355cc;
+    color: #fff;
+     font: 16px 'Merriweather Sans', sans-serif;
+     text-transform: uppercase;
+}
     .gettoch {
         width: 100%;
         text-align: center;
