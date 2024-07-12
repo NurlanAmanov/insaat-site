@@ -120,10 +120,10 @@ nav {
     color: #fff;
 }
 
-.btn:hover {
-    background: transparent;
-    color: #ff8a1d;
-    border: 1px solid #ff8a1d;
+.left .btn:hover {
+    border: none;
+    background: #cc6301;
+    color: #ffffff;
     transition: .3s ease;
 }
 
@@ -139,7 +139,7 @@ nav {
 }
 
 .section-top {
-    padding: 80px ;
+    padding: 80px;
 }
 
 .cards {
@@ -153,25 +153,25 @@ nav {
 .card {
     margin-bottom: 15px;
     width: 100%;
-    padding: 30px;
+    padding: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
-
-.card:nth-child(2) {
-    background: #ff8a1d
+.cardimg i {
+font-size: 1.2em;
 }
 
 .card:hover {
+    color: #fff;
     background: #ff8a1d;
     transition: .3s all;
 
 }
 
-.cardimg {
+/* .cardimg {
     width: 75px;
     height: 75px;
 }
@@ -179,7 +179,7 @@ nav {
 .cardimg img {
     width: 100%;
     object-fit: cover;
-}
+} */
 
 .card-text h5 {
     margin-top: 20px;
@@ -228,7 +228,7 @@ nav {
 
 }
 
-.btn:hover {
+.about a:hover {
     background: transparent;
     color: #0355cc;
     border: 1px solid #0355cc;
@@ -267,6 +267,33 @@ nav {
     flex-direction: column;
     padding: 0 30px;
 }
+
+.blubtn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    margin-left: 0;
+    height: 40px;
+    background: #ff8a1d;
+    border-color: #ff8a1d;
+    border: none;
+    border-radius: 2px;
+    margin-top: 15px;
+    font-family: 16px 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+
+
+}
+
+.blubtn:hover {
+    background: #ff8a1d;
+    transition: .3s all;
+
+}
+
+
 
 .blucard h2 {
     font-family: 'Merriweather Sans', sans-serif;
@@ -392,60 +419,69 @@ button:hover {
     transition: .3s ease;
 }
 
-.contacts{
+.contacts {
     width: 100%;
-  padding: 90px;
+    padding: 90px;
 }
-.contacts h2{
+
+.contacts h2 {
     font: 32px 'Merriweather Sans', sans-serif;
     font-weight: bold;
 }
-.cardcont{
+
+.cardcont {
     margin-top: 25px;
     width: 100%;
     display: flex;
-     flex-direction: column;
+    flex-direction: column;
 
 }
-.contblcok{
+
+.contblcok {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-   
+
 }
-iframe{
+
+iframe {
     margin: 25px;
 }
-form input{
-width: 100%;
-border: none;
-height: 50px;
-margin-bottom: 25px;
-padding-left: 25px;
-background-color: #ffffff;
-outline: none;
-color: #ffffff;
-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
-}
- #text{
+
+form input {
     width: 100%;
-   height: 150px;
+    border: none;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    background-color: #fdf7f7f1;
+    outline: none;
+    color: #000;
+    
 }
-iframe{
+
+#text {
     width: 100%;
-  
+    height: 130px;
 }
-form button{
+
+iframe {
+    width: 100%;
+
+}
+
+form button {
     width: 30%;
     height: 50px;
     background: #0355cc;
     color: #fff;
-     font: 16px 'Merriweather Sans', sans-serif;
-     text-transform: uppercase;
-     border: none;
+    font: 16px 'Merriweather Sans', sans-serif;
+    text-transform: uppercase;
+    border: none;
 }
+
 .gettoch {
     text-align: center;
     background: #0a0f43;
@@ -527,7 +563,7 @@ form button{
 }
 
 .socilaivons {
- 
+
     margin: 20px;
     display: flex;
     align-items: center;
@@ -536,7 +572,7 @@ form button{
 }
 
 .socilaivons a {
-   text-align: center;
+    text-align: center;
     font-size: 30px;
     color: #fff;
     margin: 0 15px;
@@ -546,21 +582,24 @@ form button{
 .socilaivons a:hover:nth-child(1) {
     margin: 0;
     border-radius: 20%;
-background:#e1306c;
-transition: .3s all; 
-scale: 1.5;}
+
+    transition: .3s ease;
+ color:#E1306C;
+}
+
 .socilaivons a:hover:nth-child(2) {
     margin: 0;
     border-radius: 10%;
-background: #ff8a1d;
-transition: .3s all; 
-scale: 1.5;}
+    transition: .3s ease;
+    color:  #e7a33e;
+}
+
 .socilaivons a:hover:nth-child(3) {
     margin: 0;
     border-radius: 50%;
-background: #1d21ff;
-transition: .3s all; 
-scale: 1.5;}
+    transition: .3s ease;
+    color: 	#4267B2;
+}
 
 footer {
     display: flex;
@@ -592,15 +631,19 @@ footer {
         padding: 0 0;
 
     }
+
     .silderss {
+        width: 80%;
         padding-top: 15px;
         padding-left: 0;
         padding-right: 0;
     }
+
     .headtop {
         padding: 15px 0;
     }
-    .conct{
+
+    .conct {
         padding: 0 25px;
     }
 
@@ -614,12 +657,13 @@ footer {
         justify-content: center;
 
     }
- 
-.rght img{
-    height: 50%;
-    object-fit: cover;
-    
-}
+
+    .rght img {
+        height: 50%;
+        object-fit: cover;
+
+    }
+
     #menu {
 
         list-style: none;
@@ -634,38 +678,37 @@ footer {
         font: 16px 'Lato', sans-serif;
         padding: 10px 25px;
     }
-#menu li  a:hover{
-    color: #0355cc;
-    transition: .3s all;
-    
-}
-    #active {
-        color: #0355cc !important;
+
+    #menu li a:hover {
+        color: #0355cc;
+        transition: .3s all;
+
     }
-    
+
+
 
 
     .left {
         text-align: left;
         width: 50%;
-    
+
     }
-    
+
     .left h1 {
         color: #0355cc;
         font: 40px 'Merriweather Sans', sans-serif;
         font-weight: bold;
         max-width: 50%;
     }
-    
+
     .left p {
-       
+
         color: #444;
         font: 15px 'Lato';
         max-width: 100%;
     }
-    
-    .btn {
+
+    .left .btn {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -681,31 +724,31 @@ footer {
         text-transform: uppercase;
         color: #fff;
     }
-    
-    .btn:hover {
-        background: transparent;
-        color: #ff8a1d;
+
+    .left .btn:hover {
+        background: #f37a09;
+        color: #ffffff;
         border: 1px solid #ff8a1d;
         transition: .3s ease;
     }
-    
+
     .rght {
         width: 50%;
         height: 100%;
-        margin-left: 50px;
+        margin-left: 60px;
         object-fit: cover;
-       
+
     }
- 
-  
+
+
     .silderss .hero {
         width: 100%;
-       
+
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
-    
+
 
     }
 
@@ -716,9 +759,10 @@ footer {
     .hero p {
         width: 700px;
     }
-.section-top{
-    padding: 80px 0;
-}
+
+    .section-top {
+        padding: 80px 0;
+    }
 
     .cards {
         margin: auto;
@@ -729,16 +773,41 @@ footer {
         flex-direction: row;
         max-width: 960px;
     }
+    .card {
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    }
     .card:hover {
+        color: #fff;
         background: #ff8a1d;
         transition: .3s all;
-        scale: 1.05;
+    
     }
+
     .cards .card {
         max-width: 100%;
         width: 340px;
         margin-left: 20px;
         height: 30vh;
+    }
+
+    .cardimg i {
+        font-size: 50px;
+
+    }
+
+    .card h4 {
+        font-size: 1.4em;
+    }
+
+    .card-text {
+        margin-top: 20px;
     }
 
     .abouttext {
@@ -773,6 +842,30 @@ footer {
         max-width: 50%;
     }
 
+    .blubtn {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 190px;
+        margin-left: 0;
+        color: #fff;
+        height: 40px;
+        background: #ff8a1d;
+        font-weight: bold;
+        border: none;
+        border-radius: 2px;
+        margin-top: 15px;
+        font: 1.5em 'Merriweather Sans' sans-serif;
+        text-transform: uppercase;
+    }
+
+    .blubtn:hover {
+        transition: .3s ease;
+        background: #f07c0f;
+        color: #fff;
+    }
+
     .blucard p {
         max-width: 450px;
     }
@@ -780,10 +873,12 @@ footer {
     .blucard h2 {
         max-width: 500px;
     }
-.cardservc:hover{
-    scale: 1.1;
-    transition: .5s all;
-}
+
+    .cardservc:hover {
+        scale: 1.1;
+        transition: .5s all;
+    }
+
     #profsimg {
         display: inline-block;
         width: 100%;
@@ -803,54 +898,65 @@ footer {
     .cardservc {
         margin-left: 25px;
     }
-        .contacts{
-            width: 100%;
-          padding: 125px;
-        }
-        .contacts h2{
-            font: 32px 'Merriweather Sans', sans-serif;
-            font-weight: bold;
-        }
-        .cardcont{
-            margin-top: 25px;
-            width: 100%;
-            display: flex;
-             flex-direction: column;
 
-        }
-        .contblcok{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
-            width: 100%;
-           
-        }
-        .cardcont{
-            max-width: 960px;
-        }
-        iframe{
-            margin: 25px;
-        }
-    form input{
-    width: 100%;
-    border: none;
-    height: 50px;
-    margin-bottom: 25px;
-    padding-left: 25px;
-    background-color: #ffffff;
-    outline: none;
-    color: #ffffff;
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
-}
-form button{
-    width: 30%;
-    height: 50px;
-    background: #0355cc;
-    color: #fff;
-     font: 16px 'Merriweather Sans', sans-serif;
-     text-transform: uppercase;
-}
+    .contacts {
+        width: 100%;
+        padding: 125px;
+    }
+
+    .contacts h2 {
+        font: 32px 'Merriweather Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    .cardcont {
+        margin-top: 25px;
+        width: 100%;
+        height: 425px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contblcok {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+
+    }
+
+    .cardcont {
+        max-width: 960px;
+    }
+
+    iframe {
+        margin: 0 20px;
+    }
+
+    form input {
+        width: 100%;
+        border: none;
+        height: 50px;
+        margin-bottom: 25px;
+        padding-left: 25px;
+        background: rgb(245, 245, 245);
+        outline: stroke;
+        color: #000;
+
+    }
+
+    form button {
+        margin:  5px 0;
+        width: 30%;
+        height: 50px;
+        background: #0355cc;
+        color: #fff;
+        font: 16px 'Merriweather Sans', sans-serif;
+        text-transform: uppercase;
+    }
+
     .gettoch {
         width: 100%;
         text-align: center;
